@@ -6,6 +6,11 @@ interface Iref{
 //        System.out.println("I am default method");
 //    };
 }
+class C extends A implements Iref{
+    public void modifierChecker(){
+        System.out.println("I am in C");
+    }
+}
 
 public class A implements Iref {
     public void modifierChecker(){

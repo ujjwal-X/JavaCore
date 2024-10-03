@@ -1,4 +1,4 @@
-package CollectionFrameWork.Vector;
+package CollectionFrameWork.Cursor;
 
 import java.util.Enumeration;
 import java.util.Vector;
@@ -14,6 +14,7 @@ public class EnumrationCusror {
 
 
         Enumeration e=v.elements();
+        System.out.println(e.getClass().getName());
         while (e.hasMoreElements()){
             System.out.println(e.nextElement());
         }
