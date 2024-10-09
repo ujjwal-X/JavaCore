@@ -1,0 +1,13 @@
+When a statement throws an exception in the try block, the remaining part of the try block will not be executed. Program control comes out of the try block and enters directly into catch block.
+try, catch and finally blocks form one unit. i.e You can’t keep other statements in between try, catch and finally blocks.
+You can display the description of an exception thrown using Exception object in the catch block. using ex.printStackTrace();
+From Java 7 onward, there is one more way for handling multiple exceptions. Multiple exceptions thrown by the try block can be handled by a single catch block using pipe (|) operator. By using pipe operator, the above example can be written as,
+The order of catch blocks should be from most specific to most general ones. i.e Sub classes of Exception must come first and super classes later. If you keep the super classes first and sub classes later, you will get compile time error : Unreachable Catch Block.
+
+
+
+
+
+
+
+
