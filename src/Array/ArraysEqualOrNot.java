@@ -5,8 +5,12 @@ import java.util.Arrays;
 
 public class ArraysEqualOrNot {
     public static void main(String[] args) {
-        int[] arr=new int[]{10,20,30,40,50};
-        int[] arr1=new int[]{20,30,10,40,60};
+
+            int[] arr=new int[]{'a', 'b', 'c'};
+            int[] arr1=new int[]{'a', 'b', 'c'};
+
+
+
         int counter=0;
         Arrays.sort(arr);
         Arrays.sort(arr1);
@@ -19,13 +23,17 @@ public class ArraysEqualOrNot {
                     break;
                 }
             }
-        }
-        if(counter==arr.length){
-            System.out.println("Equals");
+            if(counter==arr.length){
+                System.out.println("Equals");
+            }
+            else {
+                System.out.println("Not Equals");
+            }
         }
         else {
             System.out.println("Not Equals");
         }
+
 
     }
 }
