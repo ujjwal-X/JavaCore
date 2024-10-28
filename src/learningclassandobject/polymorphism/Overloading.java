@@ -1,4 +1,4 @@
-package learningclassandobject.PolyMorphism;
+package learningclassandobject.polymorphism;
 //method overRiding is also called Run time Polymorphism
 
 public class Overloading {

@@ -1,2 +1,25 @@
-package java8.functioninterface;public class AnonymusClass {
+package java8.functioninterface;
+
+public class AnonymusClass {
+    public static void main(String[] args) {
+
+//        Runnable r=new Runnable() {
+//            @Override
+//            public void run() {
+//                for(int i=0; i<10;i++){
+//                    System.out.println("CHILD THREAD");
+//                }
+//            }
+//        };
+        Runnable r=()->{
+            for(int i=0; i<10;i++){
+                   System.out.println("CHILD THREAD");
+            }
+        };
+        Thread t=new Thread(r);
+        t.start();
+        for(int i=0; i<10;i++){
+            System.out.println("PARENT THREAD");
+        }
+    }
 }

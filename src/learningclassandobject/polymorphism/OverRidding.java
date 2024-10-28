@@ -1,4 +1,4 @@
-package learningclassandobject.PolyMorphism;
+package learningclassandobject.polymorphism;
 class Animal {
     // Method in superclass
     int x=10;

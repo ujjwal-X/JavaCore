@@ -6,6 +6,7 @@ import java.util.Arrays;
 public class CountContent {
     public static void main(String[] args) {
         String str="za kiu, I swd skieo 236587. GH kiu: sieo?? 25.33";
+        
         counter(str);
 ;
     }
