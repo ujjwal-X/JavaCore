@@ -1,4 +1,4 @@
-package java8.functioninterface;
+package java8.lambdaexpression;
 
 public class AnonymusClass {
     public static void main(String[] args) {

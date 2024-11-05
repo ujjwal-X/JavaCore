@@ -1,4 +1,4 @@
-package java8.functioninterface;
+package java8.lambdaexpression;
 
 import java.util.function.Predicate;
 //Predicate is fi  which takes only one argument and return boolean value

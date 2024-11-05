@@ -7,4 +7,5 @@ public static void main(String[] args) {
          Interf1 i =(x) -> x*x;
         System.out.println("Square is "+i.square(5));
         }
+
 }

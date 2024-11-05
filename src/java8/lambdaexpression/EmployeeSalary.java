@@ -1,6 +1,4 @@
-package java8.functioninterface;
-
-import java8.lambdaexpression.Employee;
+package java8.lambdaexpression;
 
 import java.util.ArrayList;
 import java.util.function.Predicate;

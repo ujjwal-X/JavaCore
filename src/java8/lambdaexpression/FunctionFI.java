@@ -1,4 +1,4 @@
-package java8.functioninterface;
+package java8.lambdaexpression;
 
 import java.util.function.Function;
 

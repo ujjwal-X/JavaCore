@@ -1,17 +1,17 @@
-package java8.functioninterface;
+package java8.lambdaexpression;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-class Employee {
+class Employee1 {
      String name;
      int empno;
-    Employee(String name,int empno){
+    Employee1(String name,int empno){
         this.name=name;
         this.empno=empno;
     }
-    public Employee() {
+    public Employee1() {
 
     }
 
@@ -21,13 +21,13 @@ class Employee {
     }
 }
 
-public class Test {
+public class Test1 {
     public static void main(String[] args) {
-        ArrayList<Employee> e=new ArrayList<>();
-        e.add(new Employee("Karan",1001));
-        e.add(new Employee("Eshant",101));
-        e.add(new Employee("Shubham",102));
-        e.add(new Employee("Gourav",103));
+        ArrayList<Employee1> e=new ArrayList<>();
+        e.add(new Employee1("Karan",1001));
+        e.add(new Employee1("Eshant",101));
+        e.add(new Employee1("Shubham",102));
+        e.add(new Employee1("Gourav",103));
 //        Comparator c=(e1,e2)->e1.name>e2.name?;
 //        Collections.sort(e);
 //   ->   Sorting of empno ascending order
@@ -36,7 +36,7 @@ public class Test {
 //        for reverse sorting order Comparator<Employee> c=(e1,e2)->e2.empno-e1.empno;
 //        Collections.sort(e,c);
 //   -> sorting of name
-        Comparator<Employee> c=(e1,e2)->e2.name.compareTo(e1.name);
+        Comparator<Employee1> c=(e1,e2)->e2.name.compareTo(e1.name);
 //    for ascending order    Comparator<Employee> c=(e1,e2)->e1.name.compareTo(e2.name); for descending Comparator<Employee> c=(e1,e2)->e2.name.compareTo(e1.name);
         Collections.sort(e,c);
         System.out.println(e);
