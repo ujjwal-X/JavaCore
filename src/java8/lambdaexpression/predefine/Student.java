@@ -107,5 +107,6 @@ public class Student {
         Supplier<Student1> s=()->new Student1(111111, "New Student", 92.9, "Java 8");
         listOfStudents.add(s.get());
         System.out.println(listOfStudents);
+
     }
 }

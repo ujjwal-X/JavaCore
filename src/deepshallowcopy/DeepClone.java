@@ -27,9 +27,10 @@ class Person implements Cloneable{
     }
 }
 
-public class DeepClone {
+public class DeepClone implements Cloneable {
     public static void main(String[] args) throws CloneNotSupportedException {
         Address a=new Address("indore");
+
         Person p=new Person("R",a);
         Person p1=(Person) p.clone();
         System.out.println("==============Original===================");

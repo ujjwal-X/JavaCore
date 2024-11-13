@@ -10,6 +10,9 @@ class Employee {
     Employee(){
 
     }
+    protected void staticmethod(){
+        System.out.println("Static method of Employee class");
+    }
 
     protected void work(){
         System.out.println("Employee");
@@ -23,6 +26,8 @@ class Engineer extends Employee {
 
     }
 
+
+
 }
 public class Inheritance1 extends Engineer{
     public static void main(String[] args) {
@@ -32,9 +37,5 @@ public class Inheritance1 extends Engineer{
         e2.work();
         e1.m1();
 
-
-
-
-        System.out.println(e1.benefits);
     }
 }
