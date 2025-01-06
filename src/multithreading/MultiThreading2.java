@@ -12,6 +12,7 @@ public class MultiThreading2 {
     public static void main(String[] args) {
         Threading t=new Threading();
         t.start();
+
         for (int i=0; i<10;i++){
             System.out.println("Main thread"+Thread.currentThread().getName());
         }

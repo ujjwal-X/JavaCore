@@ -4,9 +4,14 @@ class Thread1 extends Thread
     @Override
     public void run()
     {
-        for(int i = 0; i <= 1000; i++)
+        for(int i = 0; i <= 100; i++)
         {
-            System.out.println(i);
+            System.out.println("Thread-1");
+            try {
+                Thread.sleep(10);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 }
@@ -18,9 +23,9 @@ class Thread2 extends Thread
     @Override
     public void run()
     {
-        for(int i = 1001; i<= 2000; i++)
+        for(int i = 0; i<= 100; i++)
         {
-            System.out.println(i);
+            System.out.println("Thread-2");
         }
     }
 }
@@ -34,8 +39,10 @@ public class MultiThreading1
         Thread1 t1 = new Thread1();
         t1.start();
 
+
         //Creating second thread
         Thread2 t2 = new Thread2();
         t2.start();
+
     }
 }

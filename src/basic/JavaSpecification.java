@@ -1,4 +1,8 @@
 package basic;
+
+import java.lang.management.ManagementFactory;
+import java.lang.management.ThreadMXBean;
+
 public class JavaSpecification {
     public static void main(String[] args) {
         // Display Java version
@@ -18,5 +22,17 @@ public class JavaSpecification {
 
         // Display Java class path
         System.out.println("Java Class Path: " + System.getProperty("java.class.path") + "\n");
+
+        ThreadMXBean threadMXBean = ManagementFactory.getThreadMXBean();
+
+        // Get the current thread count
+        int threadCount = threadMXBean.getThreadCount();
+
+        // Print the number of threads
+        System.out.println("Number of active threads: " + threadCount);
+
+        // Additional details (optional)
+        System.out.println("Peak thread count: " + threadMXBean.getPeakThreadCount());
+        System.out.println("Daemon thread count: " + threadMXBean.getDaemonThreadCount());
     }
 }

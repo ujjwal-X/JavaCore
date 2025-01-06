@@ -1,7 +1,8 @@
 package collectionframework.list.linklist;
 
 import java.util.Collections;
-        import java.util.LinkedList;
+import java.util.Comparator;
+import java.util.LinkedList;
 
 // User defined class implements Comparable
 class Student implements Comparable<Student> {
@@ -14,6 +15,39 @@ class Student implements Comparable<Student> {
         this.Name = name;
         this.Id = id;
         this.Rank = rank;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "Name='" + Name + '\'' +
+                ", Id=" + Id +
+                ", Rank=" + Rank +
+                '}';
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public int getId() {
+        return Id;
+    }
+
+    public void setId(int id) {
+        Id = id;
+    }
+
+    public int getRank() {
+        return Rank;
+    }
+
+    public void setRank(int rank) {
+        Rank = rank;
     }
 
     // Override the compareTo() method
@@ -62,6 +96,18 @@ public class ComparableLinkList {
             System.out.println(s.Rank + " " + s.Name + " "
                     + s.Id);
         }
+
+        //sort based on names
+
+        Collections.sort(List, new Comparator<Student>() {
+            @Override
+            public int compare(Student o1, Student o2) {
+                return o1.getName().charAt(0)-o2.getName().charAt(0);
+            }
+        });
+
+
+        System.out.println(List);
     }
 }
 

@@ -32,27 +32,39 @@ public class DeepClone implements Cloneable {
         Address a=new Address("indore");
 
         Person p=new Person("R",a);
+
         Person p1=(Person) p.clone();
+
         System.out.println("==============Original===================");
         System.out.println(p.name);
+
         System.out.println(p.address.city);
+
         System.out.println(p1.name);
+
         System.out.println(p1.address.city);
+
         System.out.println("==============Changed==============");
         System.out.println(p.name="H");
+
         System.out.println(p.address.city="Ujjain");
+
         System.out.println(p1.name);
+
         System.out.println(p.address.city);
+
         System.out.println(p1.address.city);
+
         System.out.println("==============Changed2==============");
         System.out.println(p.name="James Gosling");
+
         System.out.println(p.address.city="America");
+
         System.out.println(p1.name);
+
         System.out.println(p.address.city);
+
         System.out.println(p1.address.city);
-
-
-
 
     }
 }

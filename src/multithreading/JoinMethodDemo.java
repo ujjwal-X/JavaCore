@@ -18,7 +18,7 @@ public class JoinMethodDemo  {
     public static void main(String[] args)throws InterruptedException {
 MyThread1 mt=new MyThread1();
 mt.start();
-        mt.join(1000);
+        mt.join();
         for(int i=0; i<10;i++){
 
             System.out.println("Main thread");
