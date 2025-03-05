@@ -2,6 +2,7 @@ package collectionframework.comparator;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class ComparableDemo1 {
     public static void main(String[] args) {
@@ -20,6 +21,16 @@ public class ComparableDemo1 {
         for(Student st:al){
             System.out.println(st.rollno+" "+st.name+" "+st.age);
         }
+
+//        al.sort(Comparator.comparing(c->c.name));
+
+        al.sort(new Comparator<Student>() {
+            @Override
+            public int compare(Student o1, Student o2) {
+                return o2.compareTo(o1);
+            }
+        });
+        System.out.println(al);
 
     }
 }

@@ -79,7 +79,7 @@ public class CollectorsMethods {
 //        Counting number of students.
         Long totalNumber=studentList.stream().collect(Collectors.counting());
         System.out.println(totalNumber);
-//        Collecting highest percentage.
+//        Collecting the highest percentage.
         Optional<Double> percentage=studentList.stream().map(Student::getPercentage).collect(Collectors.maxBy(Comparator.naturalOrder()));
         System.out.println(percentage);
     }

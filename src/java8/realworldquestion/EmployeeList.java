@@ -41,9 +41,9 @@ public class EmployeeList {
 
 
         //How many male and female employees are there in the organization?
-        long female=employeeList.stream().filter(i->i.gender.equalsIgnoreCase("Female")).count();
-        long male=employeeList.stream().filter(i->i.gender.equalsIgnoreCase("Male")).count();
-//        System.out.println("Total number of Female = "+female+"Total number of Male = "+male);
+         double l1=employeeList.stream().filter(employee ->employee.getGender().equals("Male")).count();
+         System.out.println(l1);
+         //        System.out.println("Total number of Female = "+female+"Total number of Male = "+male);
 
 
 

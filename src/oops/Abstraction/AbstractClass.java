@@ -12,11 +12,11 @@ abstract class Animals{
     }
 }
 class Dog extends Animals{
-
     @Override
-    public void animalSound() {
-
+    void animalSound() {
+        
     }
+
 //    it is not compulsory to override declared class but it is compulsory ro override abstract class
 }
 public class AbstractClass {
